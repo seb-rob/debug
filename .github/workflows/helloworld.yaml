@@ -4,7 +4,7 @@ name: "Hello world workflow" #This is the name of the github action
 #Now we will attach this particular workflow to the events, 
 #so if something is pushed to master branch or to production, the workflow will run
 #On key will register events
-On:
+on:
   push:
     branches:
           - master
@@ -12,8 +12,8 @@ On:
 
 jobs:
   hello_world: #it is the name of the job
-        runs_on: ubuntu-latest #it defines type of environment where is workflow will execute
-        steps:
-          - name: " Print Hello World" #name of the step
-            run: echo "hello world" #here we use run keyword to execute the step
+    runs-on: ubuntu-latest #it defines type of environment where is workflow will execute
+    steps:
+      - name: " Print Hello World" #name of the step
+        run: echo "hello world" #here we use run keyword to execute the step
             
