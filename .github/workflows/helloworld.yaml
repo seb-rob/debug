@@ -16,4 +16,6 @@ jobs:
     steps:
       - name: " Print Hello World" #name of the step
         run: echo "hello world" #here we use run keyword to execute the step
-            
+
+      - name: "Print surrent date" #name of the 2nd step, it will print the current date
+        run: date
